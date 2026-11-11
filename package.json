@@ -1,0 +1,71 @@
+{
+  "name": "shuyun",
+  "version": "0.3.4",
+  "description": "仅 macOS：在菜单栏和 DSH 顶部实时显示云枢（Yunshu / 鹰云 SASE）终端监控动作——截屏、录音、摄像头、键盘监听、剪贴板、浏览器地址、扫描文件等。只读，不改云枢、不联网。",
+  "keywords": [
+    "deepseek",
+    "dsh",
+    "plugin",
+    "workbench",
+    "shuyun",
+    "yunshu",
+    "云枢",
+    "eagleyun",
+    "sase",
+    "edr",
+    "privacy",
+    "macos",
+    "menu-bar",
+    "swiftbar"
+  ],
+  "license": "MIT",
+  "author": "tanxiaolong",
+  "os": [
+    "darwin"
+  ],
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "src",
+    "lib",
+    "scripts",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node --check src/index.js && node --check src/collector.js && node --check lib/client.js",
+    "probe": "node scripts/probe.mjs 20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "engines": {
+      "dsh": ">=0.2.2-alpha.2 <0.3.0"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanxiaolong/shuyun.git"
+  },
+  "homepage": "https://github.com/tanxiaolong/shuyun#readme",
+  "bugs": {
+    "url": "https://github.com/tanxiaolong/shuyun/issues"
+  }
+}

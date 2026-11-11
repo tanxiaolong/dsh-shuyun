@@ -1,0 +1,5 @@
+# 云枢监控实况：只往 Harness 插件树里插一条采集器。
+# 顶栏徽标由 package.json 的 dsh.client 客户端入口自行注册。
+- insert:
+    - id: shuyun
+      name: shuyun
