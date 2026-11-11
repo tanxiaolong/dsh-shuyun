@@ -8,8 +8,8 @@
 
 ## 名字说明
 
-- 包名是 **`shuyun`**（枢云的拼音），描述里仍然写 **云枢（Yunshu）**——指的是同一个东西。
-- 0.1.x 叫 `yunshu-watch`，0.2.0 起改名：模块 id、HTTP 路由（`/api/yunshu-watch/state` → `/api/shuyun/state`）、状态目录、SwiftBar 脚本名一并改成 `shuyun`。
+- 包名是 **`dsh-shuyun`**（DSH 前缀 + 枢云），描述里仍然写 **云枢（Yunshu）**——指的是同一个东西。
+- 0.1.x 叫 `yunshu-watch`，0.2.0 起改名叫 `shuyun`，0.3.5 起统一成 `dsh-shuyun`（跟随生态惯例）：模块 id、HTTP 路由（`/api/yunshu-watch/state` → `/api/shuyun/state`）、状态目录、SwiftBar 脚本名一并改成 `shuyun`。
 - 升级路径：旧版本会在 `~/Library/Application Support/yunshu-watch/` 留一个状态目录、在 SwiftBar 里留一个 `yunshu-watch.2s.sh`。新版本启动时会**自动删掉旧脚本**（避免菜单栏挂着两个条目），旧目录可以手动删除。
 
 ## 两块显示面（SwiftBar 是可选的）
@@ -54,7 +54,7 @@
 ## 安装
 
 ```sh
-dsh plugin add shuyun
+dsh plugin add dsh-shuyun
 ```
 
 装完**重启 DSH**（客户端模块需要重新加载），顶栏日期右边就会出现徽标。
@@ -102,7 +102,7 @@ dsh plugin add shuyun
 
 ## 卸载
 
-在「工作台 → 已安装」移除 `shuyun`，然后手动清掉两处残留：
+在「工作台 → 已安装」移除 `dsh-shuyun`，然后手动清掉两处残留：
 
 ```sh
 rm -rf "$HOME/Library/Application Support/shuyun"

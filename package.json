@@ -1,6 +1,6 @@
 {
-  "name": "shuyun",
-  "version": "0.3.4",
+  "name": "dsh-shuyun",
+  "version": "0.3.5",
   "description": "仅 macOS：在菜单栏和 DSH 顶部实时显示云枢（Yunshu / 鹰云 SASE）终端监控动作——截屏、录音、摄像头、键盘监听、剪贴板、浏览器地址、扫描文件等。只读，不改云枢、不联网。",
   "keywords": [
     "deepseek",
@@ -62,10 +62,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tanxiaolong/shuyun.git"
+    "url": "git+https://github.com/tanxiaolong/dsh-shuyun.git"
   },
-  "homepage": "https://github.com/tanxiaolong/shuyun#readme",
+  "homepage": "https://github.com/tanxiaolong/dsh-shuyun#readme",
   "bugs": {
-    "url": "https://github.com/tanxiaolong/shuyun/issues"
+    "url": "https://github.com/tanxiaolong/dsh-shuyun/issues"
   }
 }

@@ -2,4 +2,4 @@
 # 顶栏徽标由 package.json 的 dsh.client 客户端入口自行注册。
 - insert:
     - id: shuyun
-      name: shuyun
+      name: dsh-shuyun
